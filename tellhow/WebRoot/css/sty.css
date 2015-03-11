@@ -1,0 +1,116 @@
+/* CSS Document */
+body{margin:0px auto; line-height:24px;font-size:12px;text-align:center; font-family:"宋体","微软雅黑";}
+
+a:link{text-decoration:none; color:#000;}
+a:hover{ text-decoration:underline; color:#d7000f;}
+a:active{ text-decoration:none;}
+a:visited{ text-decoration:none;color:#000;}
+
+
+.clear{ clear:both;}
+#main{ margin:0px auto; height:auto; width:auto;}
+
+/*头*/
+#top{ background:url(images/top_bg.jpg) repeat-x; height:28px;width:auto;}
+.top_mid{height:26px; width:1002px; padding-top:2px;margin:0px auto;}
+.yhm{ width:50px; float:left;}
+.wenben{ float:left;}
+.xs{width:30px; float:left;}
+.top_rgt{ float:right;}
+.top_rgt span{ margin-left:5px; margin-right:5px;}
+.gw{ color:#FF0000}
+
+
+
+
+/* 安博标题logo  */
+.logo{ width:1000px; height:auto; height:80px; padding:10px 0px;_padding-bottom:3px; margin:0px auto;}
+.logo_left{ float:left; width:185px; margin-top:5px;}
+.pindao{ float:left; width:57px; height:21px; margin-top:55px; margin-left:10px;}
+.logo_mid{ width:412px; height:82px; float:left; margin-left:50px;margin-top:10px;}
+.logo_rgt{ width:228px; height:50px; float:right; margin-top:28px;}
+
+
+/* 导航条 */
+.menu_bg{ height:30px; width:auto; background:url(images/menu_bg.jpg) repeat-x; margin-top:5px;_margin-top:0px;}
+.menu{ width:1000px; height:27px;color:#fff; margin:0px auto; padding-top:3px;}
+.menu ul{ list-style:none; padding:0px; margin:0px;}
+.menu li{ float:left; margin:0px 20px; _margin-left:10px;}
+
+
+
+/* 广告 */
+.gg{ height:73px; width:1000px; margin:0px auto; margin-top:6px; margin-bottom:6px;}
+
+
+.content{ width:1000px; height:100%; margin:0px auto;}
+/* 主页 */
+.main01{ margin-top:10px;}
+.main01_left{ width:258px; height:100%; float:left;}
+.main01_left_menu{ height:26px;}
+.main01_left_title{ background:url(images/title_bg01.jpg) no-repeat center bottom; width:86px; height:26px; line-height:26px;float:left; color:#fff; font-size:14px; font-weight:bold;}
+.main01_left_menu_rgt{ height:26px;margin-left:8px; float:left; width:160px;border-bottom:2px solid #ff7c7c;}
+
+
+.news{ padding-top:10px;}
+.news ul{ margin:0px;padding:0px;}
+.news li{ text-align:left;padding:0px;list-style:none; height:30px; line-height:30px; font-size:12px; border-bottom:1px dashed #ccc; padding-left:15px;}
+
+
+.main01_mid{ width:448px; height:100%; float:left; margin-left:10px;}
+.main01_mid_top{ height:247px; border:1px solid #ddd; padding-top:1px;}
+.main01_mid_bot{ margin-top:5px;}
+.main01_mid_bot dl{ margin:0px;border-bottom:1px dashed #ddd;padding:10px;}
+.main01_mid_bot dl dt{ font-size:16px;font-weight:bold; color:#e14f58;}
+.main01_mid_bot dl dd{ margin:0px; text-align:left;}
+
+
+
+.main01_rgt{ width:275px; height:100%; float:right;}
+.main01_rgt_menu{ height:26px; border-top:1px dashed #ddd; border-bottom:2px solid #ff7c7c; line-height:30px;}
+.main01_rgt_title{ font-size:14px; font-weight:bold; float:left;}
+.gd{ float:right; color:#484848;}
+.main01_rgt_main{ text-align:left; padding:0px 8px;}
+.main01_rgt_main_top{border-bottom:1px dashed #ddd; padding:15px 0px 5px 0px;}
+.main01_rgt_pic{width:258px;}
+.main01_rgt_main_top_text{ padding-top:5px;}
+.main01_rgt_main_top_title{text-align:center;}
+
+
+.main01_rgt_main_bot{ margin-top:5px;}
+.main01_rgt_main_bot ul{ margin:0px; padding:0px; list-style:url(images/list.jpg); padding-left:20px;border-bottom:1px dashed #ddd;}
+.main01_rgt_main_bot ul li{ height:26px; line-height:26px;}
+
+
+
+
+/* 精彩图库 */
+.tuku_title{ background:url(images/title_bg02.jpg) no-repeat center bottom; width:86px; height:26px; line-height:26px;float:left; color:#fff; font-size:14px; font-weight:bold;}
+.tuku_menu_rgt{ height:26px;margin-left:8px; float:left; width:906px;border-bottom:2px solid #88ce00; text-align:right;color:#484848;}
+
+.tuku_main{margin-top:10px; padding:10px 4px;}
+.tuku_main dl{ margin:0px; padding:0px;float:left; width:155px; margin:0px 5px;}
+.tuku_main dl dd{ margin:0px;padding:0px;color:#484848;}
+
+
+
+
+
+/* 精彩视频 */
+.shipin_title{ background:url(images/title_bg04.jpg) no-repeat center bottom; width:86px; height:26px;line-height:26px; float:left; color:#fff; font-size:14px; font-weight:bold;}
+.shipin_menu_rgt{ height:26px;margin-left:8px; float:left; width:906px;border-bottom:2px solid #88ce00; text-align:right;color:#484848;}
+.shipin_main{margin-top:10px; padding:10px 4px;}
+.shipin_main dl{ margin:0px; padding:0px;float:left; width:230px; margin:0px 9px;_margin:0px 8px;}
+.shipin_main dl dd{ margin:0px;padding:0px;color:#484848;}
+
+
+
+
+/* 版权 */
+.bottom{ width:1000px; height:auto; margin:0px auto;margin-top:10px; line-height:26px}
+.bot_01 ul{ list-style-type:none; padding:0px; margin:0px;}
+
+
+
+
+

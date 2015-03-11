@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="10,25" size="170,70" />
+  <include file="user_action.xml" location="265,10" size="150,30" />
+  <include file="depart_action.xml" location="20,185" size="150,30" />
+  <include file="doctor_action.xml" location="265,185" size="150,30" />
+  <include file="duty_action.xml" location="20,290" size="150,30" />
+  <include file="level_action.xml" location="265,290" size="150,30" />
+  <include file="register_action.xml" location="20,395" size="150,30" />
+  <include file="drug_action.xml" location="265,395" size="150,30" />
+  <include file="login_action.xml" location="20,500" size="150,30" />
+  <include file="news_action.xml" location="265,500" size="150,30" />
+  <include file="intro_action.xml" location="20,605" size="150,30" />
+</Struts2Diagram>
+

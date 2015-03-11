@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="doctor" location="267,10" size="280,420">
+    <action name="show" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showDoctor.jsp" />
+      </result>
+    </action>
+    <action name="addDoctor" location="65,232" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailDoctor.jsp" />
+      </result>
+    </action>
+    <action name="updateDoctor" location="65,337" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailDoctor.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="ajaxDoctor" location="10,534" size="460,211">
+    <action name="ajaxShowList" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxAddDoctor" location="260,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxDeleteDoctor" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxUpdateDoctor" location="260,163" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="showDoctor.jsp" path="/view/doctor/showDoctor.jsp" location="30,30" size="150,55" />
+  <webResource name="detailDoctor.jsp" path="/view/doctor/detailDoctor.jsp" location="29,205" size="150,55" />
+</Struts2Diagram>
+

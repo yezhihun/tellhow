@@ -1,0 +1,220 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #526AA3;
+    font-size: 12px;
+    font-family:Tahoma;
+    overflow-y: hidden;
+}
+/* 表单控件CSS */
+.form-panel {
+    margin: 10px;
+    padding: 10px;
+    color: #526AA3;
+}
+.form-panel form {
+	margin: 0;
+	padding: 0;
+}
+.form-panel .title {
+    margin-left: 8px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family:Tahoma;
+}
+.form-panel .content {
+    border: 1px solid #CAD1DB;
+    padding: 10px 0px 10px 5px;
+}
+.form-panel input[type="text"] {
+    border: 1px solid #006CBA;
+    color: #006CBA;
+    width: 130px;
+    height: 22px;
+}
+.form-panel select {
+    width: 132px;
+    height: 22px;
+    border: 1px solid #006CBA;
+    color: #006CBA;
+    margin: 0;
+    padding: 0;
+}
+.form-panel input[type="button"] {
+    /* background: url(theme/image/an4.png) no-repeat; */
+    background-color: #FF8E1B;
+    height: 20px;
+    width: 40px;
+    outline: none;
+    color: #FFFFFF;
+    line-height: 22px;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.grid-panel-tbar-ct button {
+    /* background: url(theme/image/an4.png) no-repeat; */
+    background-color: #FF8E1B;
+    height: 20px;
+    width: 40px;
+    outline: none;
+    color: #FFFFFF;
+    line-height: 22px;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+/* 表格控件CSS */
+.grid-panel-title-ct {
+	color: #526AA3;
+    margin: 0px 20px 0px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family:Tahoma;
+}
+.grid-panel-title-ct .title {
+    margin-left: 8px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family:Tahoma;
+}
+.grid-panel-tbar-ct {
+	color: #526AA3;
+    margin: 0px 20px 0px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family:Tahoma;
+    background: url(theme/image/title-bj.png) repeat-x;
+    border: 1px solid #CAD1DB;
+    border-bottom: 0 none;
+}
+.grid-panel {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #CAD1DB;
+    display: block;
+    margin: 0px 20px 0px 20px;
+    color: #526AA3;
+    line-height: 13px;
+}
+.grid-border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.grid-panel-header-ct {
+    overflow: hidden;
+    position: absolute!important;
+    border-bottom-color: #CAD1DB;
+    background: url(theme/image/title-bj.png) repeat-x;
+    border-bottom-width: 0!important;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    zoom: 1;
+}
+.grid-panel-header-innerct {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    zoom: 1;
+    padding: 0;
+    margin: 0;
+}
+.grid-panel-header-box {
+    overflow: hidden;
+    position: absolute!important;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #CAD1DB!important;
+    border-left: 0 none;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    background: url(theme/image/title-bj.png) repeat-x;
+    color: #006CBA;
+}
+.grid-panel-body {
+    overflow: hidden;
+    position: relative;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #CAD1DB;
+    border-left: 0 none;
+    border-right: 0 none;
+    border-bottom: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.grid-panel-body-view {
+    overflow: auto;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    color: #000000;
+}
+.grid-panel-body-view tr:hover td {
+    background: #F6F9FB;
+    color: #006CBA;
+}
+.grid-panel-body-view-row {
+    height: 26px;
+    border-bottom: #CAD1DB 1px dashed;
+    text-align: left;
+    table-layout:fixed;
+    word-break: break-all;
+    word-wrap:break-word;
+}
+.grid-panel-cover {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter:alpha(Opacity=30);
+    -moz-opacity:0.3;
+    opacity: 0.3;
+    z-index: 100;
+}
+/* 分页控件CSS */
+.paging-panel {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    border: 1px solid #CAD1DB;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    color: #526AA3;
+    background: #F6F9FB;
+    line-height: 0;
+    position: relative;
+}
+.paging-panel a:hover {
+    cursor: pointer;
+}
+.paging-panel input[type="button"] {
+    background: url(theme/image/an4.png) no-repeat;
+    height: 20px;
+    width: 40px;
+    outline: none;
+    color: #FFFFFF;
+    line-height: 22px;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 公用CSS */
+.disable {
+    color: gray;
+}

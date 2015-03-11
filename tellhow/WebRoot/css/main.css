@@ -1,0 +1,92 @@
+/* CSS Document */
+body{margin:0px auto; line-height:24px;font-size:12px;text-align:center; }
+
+
+#main{ margin:0px auto; height:auto; width:auto;}
+
+/*头*/
+#top{ background:url(../images/top_bg.jpg) repeat-x; height:28px;width:auto;}
+.top_mid{height:26px; width:1002px; padding-top:2px;margin:0px auto;}
+.yhm{ width:50px; float:left;}
+.wenben{ float:left;}
+.xs{width:30px; float:left;}
+.top_rgt{ float:right;}
+.top_rgt span{ margin-left:5px; margin-right:5px;}
+.gw{ color:#FF0000}
+
+
+
+
+/* 安博标题logo  */
+.logo{ width:1002px; height:auto; height:150px; padding:10px 0px;_padding-bottom:3px; margin:0px auto;}
+
+
+
+/* 导航条 */
+.menu_bg{width:1002px; height:30px; margin:0px auto; background:url(../images/menu_bg.jpg) repeat-x; margin-top:5px;_margin-top:0px;}
+.menu{ width:1002px; height:27px;color:#fff; margin:0px auto; padding-top:3px;}
+.menu ul{ list-style:none; padding:0px; margin:0px;}
+.menu li{ float:left; margin:0px 20px; _margin-left:10px;cursor: pointer;}
+
+
+
+
+.clear{ clear:both}
+
+/* 主页1 */
+.content01{ width:1002px; height:100%; margin:0px auto; text-align:left; margin-top:8px;}
+
+/* 主页1    左边 */
+.content01_left{ width:255px; height:auto; float:left;}
+
+/* 主页1    左边01 */
+.content01_left01{width:255px;height:auto;border:1px solid #dddddd; border-top:none; padding-bottom:10px;}
+.left01_bg{width:240px; height:28px; background:url(../images/dh_bg1.jpg) repeat-x; font-size:14px; font-weight:bold; padding-left:15px; padding-top:5px;}
+
+.left01_main_kc{margin-top:5px;height:25px; padding-top:10px;}
+
+.left01_main_fw{margin-top:5px;height:25px;}
+
+
+.left01_main_tj{margin-top:5px;height:25px; margin-bottom:8px;}
+
+
+
+
+/* 主页1    左边02 */
+.content01_left02{width:255px;height:auto;border:1px solid #dddddd; border-top:none; margin-top:5px;}
+.content01_left02 li{cursor: pointer;}
+.msh{ width:80px; float:left}
+.gd{ width:60px; float:right; font-size:12px; font-weight:normal; color:#5b5b5b}
+.left02_main ul{ list-style-image:url(../images/sanjiao.gif);}
+
+
+
+/* 主页的中间 */
+.content01_mid{ width:730px; height:auto; float:left;margin-left:13px!important;margin-left:10px;}
+/* 主页的中间第一部分 */
+.content01_mid01{height:277px;border:1px solid #dddddd}
+
+/* 主页的中间第二部分 */
+.content01_mid02{border:1px solid #dddddd; margin-top:15px;}
+.mid_main{ padding:0px 30px;}
+.mid_head{ text-align:center; color:#FF0000; font-size:16px; font-weight:bold; margin-top:15px;}
+.duanluo{line-height:24px;*margin-top:5px!important}
+
+
+
+
+
+
+
+
+
+
+
+/* 版权 */
+.bottom{ width:1002px; height:30px; margin:0px auto; margin-top:15px;line-height:26px; background:#ccc}
+
+
+
+
+

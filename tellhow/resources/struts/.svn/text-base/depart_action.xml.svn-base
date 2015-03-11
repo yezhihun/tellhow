@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="depart" namespace="/depart" extends="default">
+		<action name="show" class="departAction" method="show">
+			<result name="success">/view/depart/showDepart.jsp</result>
+		</action>
+		<action name="addDepart" class="departAction" method="addDepart">
+			<result name="success">/view/depart/detailDepart.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajaxDepart" namespace="/depart" extends="json-default">
+		<action name="ajaxShowList" class="departAction" method="ajaxShowList">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxShowAllDep" class="departAction" method="ajaxShowAllDep">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxAddDepart" class="departAction" method="ajaxAddDepart">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxDeleteDepart" class="departAction" method="ajaxDeleteDepart">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxUpdateDepart" class="departAction" method="ajaxUpdateDepart">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="updateDepart" class="departAction" method="updateDepart">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>

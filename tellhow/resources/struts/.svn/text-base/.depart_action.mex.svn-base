@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="depart" location="547,10" size="280,420">
+    <action name="show" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showDepart.jsp" />
+      </result>
+    </action>
+    <action name="addDepart" location="65,232" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailDepart.jsp" />
+      </result>
+    </action>
+    <action name="updateDepart" location="65,337" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailDepart.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="ajaxDepart" location="10,9" size="180,631">
+    <action name="ajaxShowList" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxShowAllDep" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxAddDepart" location="15,303" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxDeleteDepart" location="15,443" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxUpdateDepart" location="15,583" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="showDepart.jsp" path="/view/depart/showDepart.jsp" location="310,30" size="150,55" />
+  <webResource name="detailDepart.jsp" path="/view/depart/detailDepart.jsp" location="309,205" size="150,55" />
+</Struts2Diagram>
+

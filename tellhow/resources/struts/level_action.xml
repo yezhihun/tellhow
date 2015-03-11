@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="level" namespace="/level" extends="default">
+		<action name="show" class="levelAction" method="show">
+			<result name="success">/view/level/showLevel.jsp</result>
+		</action>
+		<action name="addLevel" class="levelAction" method="addLevel">
+			<result name="success">/view/level/detailLevel.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajaxLevel" namespace="/level" extends="json-default">
+		<action name="ajaxShowList" class="levelAction" method="ajaxShowList">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxAddLevel" class="levelAction" method="ajaxAddLevel">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxDeleteLevel" class="levelAction" method="ajaxDeleteLevel">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxUpdateLevel" class="levelAction" method="ajaxUpdateLevel">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="updateLevel" class="levelAction" method="updateLevel">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>

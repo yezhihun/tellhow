@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="drug" namespace="/drug" extends="default">
+		<action name="show" class="drugAction" method="show">
+			<result name="success">/view/drug/showDrug.jsp</result>
+		</action>
+		<action name="addDrug" class="drugAction" method="addDrug">
+			<result name="success">/view/drug/detailDrug.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajaxDrug" namespace="/drug" extends="json-default">
+		<action name="ajaxShowList" class="drugAction" method="ajaxShowList">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxAddDrug" class="drugAction" method="ajaxAddDrug">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxDeleteDrug" class="drugAction" method="ajaxDeleteDrug">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxUpdateDrug" class="drugAction" method="ajaxUpdateDrug">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="updateDrug" class="drugAction" method="updateDrug">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>

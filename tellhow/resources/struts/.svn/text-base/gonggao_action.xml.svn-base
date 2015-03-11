@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="gonggao" namespace="/gonggao" extends="default">
+		<action name="show" class="gonggaoAction" method="show">
+			<result name="success">/view/gonggao/showGonggao.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajaxGonggao" namespace="/gonggao" extends="json-default">
+		<action name="ajaxShowList" class="gonggaoAction" method="ajaxShowList">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxAddGongGao" class="gonggaoAction" method="ajaxAddGongGao">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxDeleteGongGao" class="gonggaoAction" method="ajaxDeleteGongGao">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxUpdateGongGao" class="gonggaoAction" method="ajaxUpdateGongGao">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="updateGongGao" class="gonggaoAction" method="updateGongGao">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>
