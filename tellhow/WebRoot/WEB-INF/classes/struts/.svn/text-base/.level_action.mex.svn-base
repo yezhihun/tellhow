@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="level" location="255,10" size="280,420">
+    <action name="show" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showLevel.jsp" />
+      </result>
+    </action>
+    <action name="addLevel" location="65,232" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailLevel.jsp" />
+      </result>
+    </action>
+    <action name="updateLevel" location="65,337" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailLevel.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="ajaxLevel" location="10,534" size="460,211">
+    <action name="ajaxShowList" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxAddLevel" location="260,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxDeleteLevel" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxUpdateLevel" location="260,163" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="showLevel.jsp" path="/view/level/showLevel.jsp" location="30,30" size="150,55" />
+  <webResource name="detailLevel.jsp" path="/view/level/detailLevel.jsp" location="29,205" size="150,55" />
+</Struts2Diagram>
+

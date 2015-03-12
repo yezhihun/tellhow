@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="login" namespace="/login" extends="default">
+		<action name="login" class="loginAction" method="login">
+			<result name="success">/view/index.jsp</result>
+			<result name="error">/view/login.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajaxLogin" namespace="/login" extends="json-default">
+		<action name="ajaxCheck" class="loginAction" method="ajaxCheck">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxLogin" class="loginAction" method="ajaxLogin">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="ajaxGetAllDesc" class="loginAction" method="ajaxGetAllDesc">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+		<action name="register" class="loginAction" method="register">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="news" location="240,745" size="280,245">
+    <action name="show" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="showNews.jsp" />
+      </result>
+    </action>
+    <action name="addNews" location="65,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detailNews.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="ajaxNews" location="10,9" size="180,631">
+    <action name="ajaxShowList" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxAddNews" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxDeleteNews" location="15,303" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxUpdateNews" location="15,443" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="updateNews" location="15,583" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="showNews.jsp" path="/view/news/showNews.jsp" location="12,765" size="150,55" />
+  <webResource name="detailNews.jsp" path="/view/news/detailNews.jsp" location="571,870" size="150,55" />
+</Struts2Diagram>
+

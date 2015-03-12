@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Hibernate Dao Support -->
+	<!-- 
+	<bean id="abstractHibernateDaoSupport" class="com.sohu.pay.core.dao.AbstractHibernateDao"
+		abstract="true">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	-->
+
+	<!-- Hibernate Jpa SessionFactory -->
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+<!-- 		<property name="hibernateProperties"> -->
+<!-- 			<props> -->
+<!-- 				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop> -->
+<!-- 				<prop key="hibernate.show_sql">false</prop> -->
+<!-- 				<prop key="hibernate.jdbc.batch_size">50</prop> -->
+<!-- 				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop> -->
+<!-- 			</props> -->
+<!-- 		</property> -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.tellhow.yezhihun.model</value>
+			</list>
+		</property>
+	</bean>
+</beans>

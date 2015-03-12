@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="user" namespace="/user" extends="default">
+		<action name="show" class="userAction" method="show">
+			<result name="success">/view/user/showUser.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ajaxUser" namespace="/user" extends="json-default">
+		<action name="ajaxShowList" class="userAction" method="ajaxShowList">
+			<result type="json">
+				<param name="root">jsonData</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory"/>
+    <!-- 允许action的名字中出现"/" -->
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    
+    
+    <!-- 全局配置，主要用于baseaction类中，提示、弹出用 -->
+    <package name="default" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="G_FAIL">/util/error.jsp</result>
+			<result name="G_SUCCESS">/util/success.jsp</result>
+			<result name="G_SUCCESS_MODEL">/util/successModel.jsp</result>
+			<result name="G_SUCCESS_NOTIP">/util/successNoTip.jsp</result>
+			<result name="G_CLOSE">/util/close.jsp</result>
+			<result name="G_EXPORT_OUTPUT">/util/export_output.jsp</result>
+			<result name="EXPORT_OUTPUT">/util/common_export_output.jsp</result>
+		</global-results>
+	</package>
+ 
+ 	<include file="struts/user_action.xml"></include>
+ 	<include file="struts/depart_action.xml"></include>
+ 	<include file="struts/doctor_action.xml"></include>
+ 	<include file="struts/duty_action.xml"></include>
+ 	<include file="struts/level_action.xml"></include>
+ 	<include file="struts/register_action.xml"></include>
+ 	<include file="struts/drug_action.xml"></include>
+ 	<include file="struts/login_action.xml"></include>
+ 	<include file="struts/news_action.xml"></include>
+ 	<include file="struts/intro_action.xml"></include>
+ 	<include file="struts/gonggao_action.xml"></include>
+   
+  
+
+</struts>

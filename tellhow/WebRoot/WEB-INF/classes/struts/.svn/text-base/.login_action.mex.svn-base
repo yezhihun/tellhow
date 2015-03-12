@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="login" location="310,10" size="280,140">
+    <action name="login" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="ajaxLogin" location="10,9" size="180,351">
+    <action name="ajaxCheck" location="15,23" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxLogin" location="15,163" size="150,41">
+      <result name="success" />
+    </action>
+    <action name="ajaxGetAllDesc" location="15,303" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/view/index.jsp" location="395,205" size="150,55" />
+</Struts2Diagram>
+
